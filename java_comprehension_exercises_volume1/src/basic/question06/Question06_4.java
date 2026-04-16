@@ -15,13 +15,12 @@ public class Question06_4 {
 		int bookPrice = 200;
 
 		System.out.println("本を売却します。");
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		do {
 			amountBooks++;
 			System.out.println("売却する本の冊数を1つ増やしますか？");
 			System.out.print("はい：0、いいえ：1>");
-
-			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 			String str = reader.readLine();
 			sellFlag = Integer.parseInt(str);

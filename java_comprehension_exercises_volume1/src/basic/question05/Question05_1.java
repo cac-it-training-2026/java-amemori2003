@@ -16,10 +16,10 @@ public class Question05_1 {
 		System.out.println("年齢を入力してください。");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-		String age = reader.readLine();
-		int num = Integer.parseInt(age);
+		String str = reader.readLine();
+		int age = Integer.parseInt(str);
 
-		if (num < 20) {
+		if (age < 20) {
 			System.out.println("20歳未満なので、お酒の提供ができません。");
 
 		} else {
